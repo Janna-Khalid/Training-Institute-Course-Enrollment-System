@@ -224,7 +224,7 @@ ON C.CourseID = S.CourseID
 WHERE S.TrainerID = 1 
 ORDER BY S.StartDate
 
--- 3. Count and display how many trainees are registered in each of the trainer�s courses
+-- 3. Count and display how many trainees are registered in each of the trainer's courses
 SELECT C.Title, COUNT(TraineeID) AS Enrolled_Trainees
 FROM Course C
 JOIN Schedule S
@@ -243,7 +243,7 @@ JOIN Trainee TR ON E.TraineeID = TR.TraineeID
 WHERE S.TrainerID = 1
 ORDER BY C.Title
 
--- 5. Return the trainer�s phone and email along with a list of their assigned courses.
+-- 5. Return the trainer's phone and email along with a list of their assigned courses.
 SELECT T.TrainerName, T.Phone, T.Email
 FROM Trainer T
 JOIN Schedule S ON T.TrainerID = S.TrainerID
